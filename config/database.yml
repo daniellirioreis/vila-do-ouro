@@ -1,0 +1,14 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: ouro
+  pool: 5
+  username: postgres
+  password: 120188
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: ouro
+  pool: 5
+  username: postgres
+  password: 120188

@@ -22,6 +22,6 @@
 //= jquery.magnific-popup.min
 //= scrollreveal
 //= scrollreveal.min
-
+//= rails
 //= require_tree .
 

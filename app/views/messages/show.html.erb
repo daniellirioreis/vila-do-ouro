@@ -1,0 +1,17 @@
+<div class="panel 
+<%if @message.warning? %>panel-warning<%end%>
+<%if @message.notification? %>panel-danger<%end%>
+<%if @message.convocation? %>panel-primary<%end%>
+"
+>
+  <div class="panel-heading"><i class="fa fa-envelope-o" aria-hidden="true"></i> <%= @message.type_message_humanize %> - <%= @message.title %></div>
+  <div class="panel-body">
+			<%= message.description %>
+			<br>
+			<br>
+			<br>
+			<%= message.user%><br>
+			<%= l  @message.created_at, format: :long %><br><br>
+			<%= link_to "Voltar", root_path %>
+	</div>
+</div>		

@@ -1,0 +1,12 @@
+pt-BR:
+  title:
+  activerecord:
+    models:
+      message:
+        one: "Mensagem"
+        many: "Mensagens"
+    attributes:
+      message:
+        title: "Título"
+        description: 'Descrição'
+        type_message: "Tipo de Messagem"

@@ -1,12 +1,12 @@
-en:
+pt-BR:
   flash:
     actions:
       create:
-        notice: '%{resource_name} was successfully created.'
+        notice: '%{resource_name} criado(a) com sucesso.'
         # alert: '%{resource_name} could not be created.'
       update:
-        notice: '%{resource_name} was successfully updated.'
+        notice: '%{resource_name} atualizado(a) com sucesso.'
         # alert: '%{resource_name} could not be updated.'
       destroy:
-        notice: '%{resource_name} was successfully destroyed.'
-        alert: '%{resource_name} could not be destroyed.'
+        notice: '%{resource_name} apagado(a) com sucesso.'
+        alert: '%{resource_name} não pode ser apagado(a).'

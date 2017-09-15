@@ -58,6 +58,8 @@ GEM
       railties (>= 4.1.0, < 5.2)
       responders
       warden (~> 1.2.3)
+    enumerate_it (1.2.8)
+      activesupport (>= 3.0.0)
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.18)
@@ -171,6 +173,7 @@ DEPENDENCIES
   bootstrap-sass
   coffee-rails (~> 4.1.0)
   devise
+  enumerate_it
   font-awesome-sass
   has_scope
   jbuilder (~> 2.0)

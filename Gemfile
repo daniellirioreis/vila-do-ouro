@@ -14,3 +14,5 @@ gem 'simple_form'
 gem 'devise'
 gem 'has_scope'
 gem 'magnific-popup-rails', '~> 1.1.0'
+gem 'enumerate_it'
+

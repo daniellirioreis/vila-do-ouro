@@ -1,0 +1,40 @@
+<h4>Listagem de Notificações</h4>
+
+<table class='table'>
+  <thead>
+    <tr>
+      <th width="30%">Título</th>
+      <th width="20%">Tipo da Messagem</th>
+      <th width="50%">Descrição</th>
+      <th colspan="2" width="1%"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @messages.each do |message| %>
+      <tr>
+        <td><%= message.title %></td>
+        <td>
+					<span class="label label-<%if message.warning? %>warning<%end%><%if message.convocation? %>primary<%end%><%if message.notification? %>danger<%end%>">
+						<%= message.type_message_humanize %>						
+					</span>
+				</td>
+        <td><%= message.description %></td>
+        <td>
+	          <%= link_to edit_message_path(message), role: 'button' do %>
+	            <h5 title="Editar"><i class="fa fa-pencil" aria-hidden="true"></i></h5>
+	          <% end %>
+			 	</td>
+	      <td>
+					<%= link_to message, method: :delete, data: { confirm: 'Confirma exclusão ?' }, role: "button" do %>
+						<h5 title="Apagar"><i class="fa fa-trash" aria-hidden="true"></i></h5>            
+					<% end %>
+				</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nova Mensagem', new_message_path, class:'btn btn-success' %>

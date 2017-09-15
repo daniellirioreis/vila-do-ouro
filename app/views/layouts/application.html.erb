@@ -37,9 +37,9 @@
 		<% render 'layouts/services'%>			
 		<%= render 'layouts/contact'%>			
 	<%else%>
-		<div class="container">			
-			<%= render 'layouts/menu'%><br><br><br>
-			<%= render 'layouts/messages'%>																			  			
+		<%= render 'layouts/menu'%><br><br><br>	
+		<%= render 'layouts/messages'%>																			  					
+		<div class="container jumbotron">			
 			<%= yield %>	
    	</div>	   	    			
 	<% end %>

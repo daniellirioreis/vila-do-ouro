@@ -4,7 +4,7 @@ class MessagesController < ApplicationController
   respond_to :html
 
   def index
-    @messages = Message.all
+    @messages = Message.sorted
     respond_with(@messages)
   end
 

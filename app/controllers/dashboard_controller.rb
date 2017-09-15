@@ -1,5 +1,5 @@
 class DashboardController < ApplicationController
   def index
-    @messages = Message.all
+    @messages = Message.sorted
   end
 end

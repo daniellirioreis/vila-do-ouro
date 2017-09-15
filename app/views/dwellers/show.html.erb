@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @dweller.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @dweller.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @dweller.phone %>
+</p>
+
+<p>
+  <strong>Cpf:</strong>
+  <%= @dweller.cpf %>
+</p>
+
+<%= link_to 'Edit', edit_dweller_path(@dweller) %> |
+<%= link_to 'Back', dwellers_path %>

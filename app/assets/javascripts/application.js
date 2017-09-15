@@ -16,12 +16,12 @@
 //= creative.min
 //= creative
 //= gulpfile
-//= jquery
 //= bootstrap.min
 //= jquery.magnific-popup
 //= jquery.magnific-popup.min
 //= scrollreveal
 //= scrollreveal.min
 //= rails
+//= require jquery.remotipart
 //= require_tree .
 

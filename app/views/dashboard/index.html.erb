@@ -1,3 +1,4 @@
+<% if current_user.dweller? %>
 <small>
 	Olá <%= current_user %> seja bem vindo !
 </small><br><br> 	
@@ -40,6 +41,5 @@
 				<% end %>
 			</table>
 	  </div>
-	</div>		
-
-
+	</div>
+<% end %>

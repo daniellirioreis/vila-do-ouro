@@ -1,0 +1,36 @@
+<h4>Listagem de Condominos</h4>
+
+<table class='table'>
+  <thead>
+    <tr>
+      <th width="30%">Nome</th>
+      <th width="20%">telefone</th>
+      <th colspan="2" width="1%"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dwellers.each do |dweller| %>
+      <tr>
+        <td><%= dweller.name %></td>
+        <td>
+					<%= dweller.phone %>						
+				</td>
+        <td>
+	          <%= link_to edit_dweller_path(dweller), role: 'button' do %>
+	            <h5 title="Editar"><i class="fa fa-pencil" aria-hidden="true"></i></h5>
+	          <% end %>
+			 	</td>
+	      <td>
+					<%= link_to dweller, method: :delete, data: { confirm: 'Confirma exclusão ?' }, role: "button" do %>
+						<h5 title="Apagar"><i class="fa fa-trash" aria-hidden="true"></i></h5>            
+					<% end %>
+				</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Novo Condomino', new_dweller_path, class:'btn btn-success' %>

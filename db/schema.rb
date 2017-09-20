@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170919022556) do
+ActiveRecord::Schema.define(version: 20170920005942) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,8 +21,15 @@ ActiveRecord::Schema.define(version: 20170919022556) do
     t.string   "email"
     t.string   "phone"
     t.string   "cpf"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+    t.string   "street",       limit: 50
+    t.string   "house_number", limit: 8
+    t.string   "complement",   limit: 20
+    t.string   "zip_code",     limit: 10
+    t.string   "neighborhood", limit: 50
+    t.string   "city",         limit: 50
+    t.integer  "federal_unit"
   end
 
   create_table "messages", force: :cascade do |t|

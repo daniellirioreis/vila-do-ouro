@@ -1,0 +1,22 @@
+pt-BR:
+  title:
+  activerecord:
+    models:
+      dweller:
+        one: "Condomino"
+        many: "Condominos"
+    attributes:
+      dweller:
+        name: "Nome"
+        email: 'Email'
+        phone: "Telefone"
+        cpf: "CPF"
+        street: 'Logradouro'
+        house_number: 'Número'
+        complement: 'Complemento'
+        zip_code: 'CEP'
+        neighborhood: 'Bairro'
+        district: 'Distrito'
+        city: 'Cidade'
+        federal_unit: 'UF'
+        

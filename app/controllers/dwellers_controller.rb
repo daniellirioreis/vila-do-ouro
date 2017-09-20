@@ -42,6 +42,6 @@ class DwellersController < ApplicationController
     end
 
     def dweller_params
-      params.require(:dweller).permit(:name, :email, :phone, :cpf)
+      params.require(:dweller).permit(:name, :email, :phone, :cpf, :street, :house_number, :zip_code, :neighborhood,:district, :city, :federal_unit)
     end
 end

@@ -1,24 +1,20 @@
-<p id="notice"><%= notice %></p>
+<h4 class='text-success'>Ficha do condomino</h4>
+<small>
+  <strong>Nome:</strong>
+  <%= @dweller.name %><br>
 
-<p>
-  <strong>Name:</strong>
-  <%= @dweller.name %>
-</p>
-
-<p>
   <strong>Email:</strong>
-  <%= @dweller.email %>
-</p>
+  <%= @dweller.email %><br>
+  <strong>Telefone:</strong>
+  <%= @dweller.phone %><br>
+  <strong>CPF:</strong>
+  <%= @dweller.cpf %><br>
+	<strong>Endereço:</strong>
+	<%= @dweller.street %>, <%= @dweller.house_number %> <%= @dweller.neighborhood %><br>
+	<%= @dweller.zip_code %> <%= @dweller.city %> - <%= @dweller.federal_unit %><br>
+</small>
+<br>
+<%= link_to 'Editar', edit_dweller_path(@dweller) %> |
+<%= link_to 'Editar Login', edit_user_registration_path(@dweller.user) %> |
+<%= link_to 'Voltar', dwellers_path %>
 
-<p>
-  <strong>Phone:</strong>
-  <%= @dweller.phone %>
-</p>
-
-<p>
-  <strong>Cpf:</strong>
-  <%= @dweller.cpf %>
-</p>
-
-<%= link_to 'Edit', edit_dweller_path(@dweller) %> |
-<%= link_to 'Back', dwellers_path %>

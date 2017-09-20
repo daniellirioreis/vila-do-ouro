@@ -1,20 +1,46 @@
 <%= simple_form_for(@dweller) do |f| %>
 	<div class="row">
-		<div class="col-lg-7">
+		<div class="col-md-7">
 			<%= f.input :name %>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-lg-5">
+		<div class="col-md-5">
     	<%= f.input :email %>
 		</div>
-		<div class="col-lg-2">
+		<div class="col-md-2">
     	<%= f.input :phone %>
 		</div>		
-		<div class="col-lg-3">
+		<div class="col-md-3">
 			<%= f.input :cpf %>
     </div>
   </div>
+	<div class="row">
+		<div class="col-md-5">
+    	<%= f.input :street %>
+		</div>
+		<div class="col-md-2">
+    	<%= f.input :house_number %>
+		</div>		
+		<div class="col-md-4">
+    	<%= f.input :complement %>
+		</div>				
+	</div>
+	<div class="row">
+		<div class="col-md-5">
+    	<%= f.input :zip_code %>
+		</div>
+		<div class="col-md-3">
+    	<%= f.input :neighborhood %>
+		</div>		
+		<div class="col-md-3">
+    	<%= f.input :city %>
+		</div>
+		<div class="col-md-1">
+			<%= f.input :federal_unit, collection: FederalUnit %>			
+		</div>						
+	</div>
+
 
   <div class="form-actions">
 	  <%= f.button :submit, class: "btn btn-success" %>

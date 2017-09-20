@@ -18,6 +18,10 @@
 								<li>
 									<%= link_to "Condomino", dwellers_path %>
 								</li>
+							<%else%>
+								<li>
+									<%= link_to "Meu cadastro", current_user.dweller %>
+								</li>							
 							<% end %>
 			        <li>
 								<%= link_to "logout", destroy_user_session_path, method: :get, :data => { :confirm => 'Deseja realmenta fazer logoff' } %>				

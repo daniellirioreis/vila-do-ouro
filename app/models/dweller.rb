@@ -1,6 +1,9 @@
 class Dweller < ActiveRecord::Base
   has_one :user, dependent: :destroy	
   validates_presence_of :name, :email
+  
+  has_enumeration_for :federal_unit, with: State, create_helpers: true
+  
   after_save :create_user
 	
   private

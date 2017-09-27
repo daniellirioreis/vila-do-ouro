@@ -1,37 +1,38 @@
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul class="nav navbar-nav">
-      <li>
-          <a class="page-scroll" href="#about">Sobre</a>
-      </li>
-      <li>
-          <a class="page-scroll" href="#portfolio">Galeria</a>
-      </li>
-      <li>
-          <a class="page-scroll" href="#contact">Contato</a>
-      </li>
-      <li>
-          <a class="page-scroll" href="#login">Área Restrita</a>
-      </li>
-    </ul>
-	 <ul class="nav navbar-nav navbar-right">
-	      <li><a href="#"><%= image_tag  "/images/logo1.png", :width => 150 %>		
-				</a></li>
-	      <li class="dropdown">
-	        <ul class="dropdown-menu">
-	          <li><a href="#">Action</a></li>
-	          <li><a href="#">Another action</a></li>
-	          <li><a href="#">Something else here</a></li>
-	          <li class="divider"></li>
-	          <li><a href="#">Separated link</a></li>
-	        </ul>
-	      </li>
-	 </ul>  </div><!-- /.navbar-collapse -->
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top"><p class="text-warning"></p></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+						 			<li>
+						      	<a class="page-scroll" href="#about">Sobre</a>
+						      </li>
+						      <li>
+						          <a class="page-scroll" href="#portfolio">Galeria</a>
+						      </li>
+						      <li>
+						          <a class="page-scroll" href="#contact">Contato</a>
+						      </li>
+						      <li>
+						          <a class="page-scroll" href="#login">Área Restrita</a>
+						      </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
 </nav>
 <header>
     <div class="header-content">
         <div class="header-content-inner">
+  						<%= image_tag  "/images/logo1.png", :width => 300 %>
             <h1 id="homeHeading">Estamos esperando por vocês</h1>
             <hr>
         </div>

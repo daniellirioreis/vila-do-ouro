@@ -3,10 +3,10 @@ pt-BR:
   activerecord:
     models:
       message:
-        one: "Mensagem"
-        many: "Mensagens"
+        one: "Notificação"
+        many: "Notificações"
     attributes:
       message:
         title: "Título"
         description: 'Descrição'
-        type_message: "Tipo de Messagem"
+        type_message: "Tipo da Notificação"

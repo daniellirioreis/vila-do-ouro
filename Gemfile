@@ -19,6 +19,4 @@ gem 'responders'
 gem 'remotipart' 
 gem 'carrierwave', '~> 0.9'
 gem 'airbrake-ruby', '~> 2.3'
-gem 'fog'
-gem "figaro"
 gem 'rails_12factor', group: :production

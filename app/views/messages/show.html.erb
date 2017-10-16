@@ -2,6 +2,9 @@
 <%if @message.warning? %>panel-warning<%end%>
 <%if @message.notification? %>panel-danger<%end%>
 <%if @message.convocation? %>panel-primary<%end%>
+<%if @message.warning? %>panel-warning<%end%>
+<%if @message.notification? %>panel-danger<%end%>
+<%if @message.accountability? %>panel-default<%end%>
 "
 >
   <div class="panel-heading"><i class="fa fa-envelope-o" aria-hidden="true"></i> <%= @message.type_message_humanize %> - <%= @message.title %></div>

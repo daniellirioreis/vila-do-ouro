@@ -28,7 +28,7 @@
 								<%= m.title%>
 						</td>
 						<td>
-							<span class="label label-<%if m.warning? %>warning<%end%><%if m.convocation? %>primary<%end%><%if m.notification? %>danger<%end%>">
+							<span class="label label-<%if m.warning? %>warning<%end%><%if m.convocation? %>primary<%end%><%if m.notification? %>danger<%end%> <%if message.accountability? %>danger<%end%>">
 								<%= m.type_message_humanize %>						
 							</span>							
 						</td>

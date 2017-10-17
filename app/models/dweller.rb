@@ -4,6 +4,9 @@ class Dweller < ActiveRecord::Base
   
   has_enumeration_for :federal_unit, with: State, create_helpers: true
   
+  scope :sorted, -> { order("dwellers.name") }
+  
+  
   after_save :create_user
 	
   private

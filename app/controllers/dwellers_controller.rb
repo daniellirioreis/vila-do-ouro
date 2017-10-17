@@ -4,7 +4,7 @@ class DwellersController < ApplicationController
   respond_to :html
 
   def index
-    @dwellers = Dweller.all
+    @dwellers = Dweller.sorted
     respond_with(@dwellers)
   end
 

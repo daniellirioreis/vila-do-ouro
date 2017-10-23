@@ -10,3 +10,4 @@ pt-BR:
         title: "Título"
         description: 'Descrição'
         type_message: "Tipo da Notificação"
+        path_file: "Caminho do arquivo"

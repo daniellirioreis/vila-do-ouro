@@ -13,7 +13,7 @@
 			<br>
 			<br>
 			<br>
-			<strong>Arquivo anexado: </strong><%= link_to "#{@message.name_file}", @message.attachment_url.to_s %><br><br>						
+			<strong>Arquivo anexado: </strong><%= link_to "#{@message.path_file}", @message.path_file %><br><br>						
 			<%= message.user%><br>
 			<%= l  @message.created_at, format: :long %><br><br>
 			<%= link_to "Voltar", root_path %>
